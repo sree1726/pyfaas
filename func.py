@@ -1,7 +1,7 @@
 
 print("Script has been loaded. Waiting for events...")  #This runs at load time
 
-# from parliament import Context, event
+from parliament import Context, event
 
 @event
 def main(context: Context):
