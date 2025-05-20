@@ -23,7 +23,7 @@ def main(context: Context):
     print("Function 'main' started")  # Start log
 
     otp_data = context.cloud_event.data
-    print(f"📦 Received event data: {otp_data}")  # Debug input
+    print(f"Received event data: {otp_data}")  # Debug input
 
     if isinstance(otp_data, dict) and "otp" in otp_data:
         print(f"🔐 OTP received: {otp_data['otp']}")
